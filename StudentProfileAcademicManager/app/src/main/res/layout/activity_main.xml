@@ -43,9 +43,9 @@
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                tools:text="Nguyễn Văn An" />
+                tools:text="PHAM TRAN THANH VINH" />
 
-            <!-- Thêm TextView cho MSSV -->
+            <!-- MSSV -->
             <TextView
                 android:id="@+id/tvStudentId"
                 android:layout_width="wrap_content"
@@ -53,9 +53,9 @@
                 android:layout_marginTop="4dp"
                 android:textColor="#A0B2C6"
                 android:textSize="16sp"
-                tools:text="MSSV: 22505120005" />
+                tools:text="MSSV: 2415053122248" />
 
-            <!-- Thêm TextView cho GPA Badge -->
+            <!-- GPA Badge -->
             <TextView
                 android:id="@+id/tvGpaBadge"
                 android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- Phần 2: Thẻ Cập nhật GPA -->
+    <!-- Phần 2: Thẻ Cập nhật GPA & Các chức năng -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardGpa"
         android:layout_width="match_parent"
@@ -89,6 +89,7 @@
             android:orientation="vertical"
             android:padding="16dp">
 
+            <!-- Ô nhập GPA -->
             <EditText
                 android:id="@+id/edtGpaInput"
                 android:layout_width="match_parent"
@@ -99,6 +100,7 @@
                 android:textColor="#FFFFFF"
                 android:textColorHint="#A0B2C6" />
 
+            <!-- Nút Cập nhật điểm GPA -->
             <Button
                 android:id="@+id/btnUpdateGpa"
                 android:layout_width="match_parent"
@@ -107,6 +109,7 @@
                 android:backgroundTint="#34B469"
                 android:text="@string/btn_update_gpa" />
 
+            <!-- Nút Khôi Phục Mặc Định (Chỉ có duy nhất 1 nút) -->
             <Button
                 android:id="@+id/btnReset"
                 android:layout_width="match_parent"
@@ -114,6 +117,15 @@
                 android:layout_marginTop="8dp"
                 android:backgroundTint="#4E5D6C"
                 android:text="@string/btn_reset" />
+
+            <!-- Nút Gửi Báo Cáo Học Tập -->
+            <Button
+                android:id="@+id/btnSendReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#00BCD4"
+                android:text="@string/btn_send_report" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

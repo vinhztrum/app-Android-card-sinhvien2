@@ -4,4 +4,5 @@
     <string name="hint_gpa">Nhập GPA mới (0.0 - 4.0)</string>
     <string name="btn_update_gpa">Cập Nhật Điểm GPA</string>
     <string name="btn_reset">Khôi Phục Mặc Định</string>
+    <string name="btn_send_report">Gửi Báo Cáo Học Tập</string>
 </resources>
