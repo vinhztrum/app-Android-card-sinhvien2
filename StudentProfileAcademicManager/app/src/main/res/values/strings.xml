@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Student Profile &amp; Academic Manager</string>
+    <string name="app_name">Quản lý Sinh viên</string>
+    <string name="avatar_desc">Ảnh đại diện sinh viên</string>
+    <string name="hint_gpa">Nhập GPA mới (0.0 - 4.0)</string>
+    <string name="btn_update_gpa">Cập Nhật Điểm GPA</string>
+    <string name="btn_reset">Khôi Phục Mặc Định</string>
 </resources>

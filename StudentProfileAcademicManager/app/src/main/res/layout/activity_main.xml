@@ -25,7 +25,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:padding="20dp"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/imgAvatar"
@@ -41,7 +42,32 @@
                 android:layout_marginTop="12dp"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="Nguyễn Văn An" />
+
+            <!-- Thêm TextView cho MSSV -->
+            <TextView
+                android:id="@+id/tvStudentId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="#A0B2C6"
+                android:textSize="16sp"
+                tools:text="MSSV: 22505120005" />
+
+            <!-- Thêm TextView cho GPA Badge -->
+            <TextView
+                android:id="@+id/tvGpaBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#34B469"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="6dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="3.75 GPA (Xuất sắc)" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -57,7 +83,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardProfile">
 
-        <!-- Cần một ViewGroup (LinearLayout) để chứa nhiều phần tử bên trong CardView -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,7 +96,8 @@
                 android:autofillHints="none"
                 android:hint="@string/hint_gpa"
                 android:inputType="numberDecimal"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textColorHint="#A0B2C6" />
 
             <Button
                 android:id="@+id/btnUpdateGpa"
